@@ -1,0 +1,25 @@
+footer {
+	background-color: var(--lightlightgray);
+}
+
+.social {
+	list-style-type: none;
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+	margin: 0;
+}
+
+.social a {
+	position: relative;
+}
+
+.social a:active {
+	top: 2px;
+}
+
+.social img {
+	height: 50px;
+	width: 50px;
+	margin: 5px 10px;
+}

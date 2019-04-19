@@ -1,0 +1,97 @@
+html, body {
+	margin: 0;
+	height: 100%;
+	--darkgray: #222222;
+	--graypink: #9b8497;
+	--lightlightgray: #bbbbbb;
+}
+body {
+	background-color: var(--darkgray);
+	font-family: "nova mono", monospace;
+}
+
+
+/* BACKGROUND IMAGES */
+.parallax {
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	opacity: 0.65;
+	position: relative;
+}
+
+.back0 {
+	background-image: url("../images/parallax-bgs/cute-corgo.jpg");
+	min-height: 76%;	/* arbitrary value to set welcome banner at bottom of page */
+}
+.back1 {
+	background-image: url("../images/parallax-bgs/sunrise-mini.jpg");
+	min-height: 1000px;
+}
+.back2 {
+	background-image: url("../images/parallax-bgs/cars-beach-background.jpg");
+	min-height: 700px;
+}
+.back3 {
+	background-image: url("../images/parallax-bgs/beach-seagull.jpg");
+	min-height: 700px;
+}
+.back4 {
+	background-image: url("../images/parallax-bgs/rock-alone.jpg");
+	min-height: 1000px;
+}
+
+
+/* WELCOME */
+.welcome {
+	padding: 35px 50px 50px 50px;
+	text-align: center;
+	background-color: var(--lightlightgray);
+}
+
+#banner {	/* animated "hello" */
+	margin: 0;
+	padding: 0;
+}
+
+.welcome span {
+	padding: 0;
+}
+
+.banner, .cursor {	/* <welcome|> */
+	display: inline;
+	font-size: 48px;
+}
+
+.cursor {	/* blinking cursor */
+	margin-left: -12px;
+	margin-right: -12px;
+	animation-name: blink;
+	animation-duration: 800ms;
+	animation-iteration-count: infinite;
+}
+
+@keyframes blink {
+	0% {opacity: 1;}
+	50% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+.welcome p {	/* paragraph */
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;	/* center text */
+}
+
+/* CAPTIONS */
+
+
+/* CONTENT */
+.separator {
+	position: relative;
+}
+
+.separator p {
+
+}

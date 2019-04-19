@@ -1,0 +1,52 @@
+/* NAVIGATION */
+.navbar {
+	/* background-color: transparent; */
+	/* opacity: 1; */
+	display: flex;
+	justify-content: flex-end;
+	flex-wrap: wrap;
+	padding-right: 5px;
+	/* background-color: var(--lightlightgray); */
+}
+
+.navbar a {
+	font-family: "nova mono", monospace;
+	margin: 10px 3px;
+	color: var(--darkgray);
+	padding: 5px 7px;
+	opacity: 0.8;
+	background-color: var(--graypink);
+	border-spacing: 10px;
+	border-radius: 2%;
+	cursor: pointer;
+	position: relative;
+	right: 5px;
+}
+
+.navbar a:hover {
+	opacity: 1;
+}
+
+.navbar span {
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+
+.navbar span::after {
+	transition: 0.5s;
+	content: ' \00bb';
+	opacity: 0;	/* hide arrow */
+	position: absolute;
+	top: 0;
+	right: -20px;
+}
+
+.navbar a:hover span {
+	padding-right: 15px;
+}
+
+.navbar a:hover span::after {
+	opacity: 1; /* show arrow */
+	right: 0;
+}
