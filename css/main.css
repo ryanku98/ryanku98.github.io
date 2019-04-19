@@ -61,12 +61,16 @@ body {
 
 .banner, .cursor {	/* <welcome|> */
 	display: inline;
-	font-size: 48px;
+	font-size: 3em;
 }
 
+.banner::before {content: "<";}
+
+.banner::after {content: ">";}
+
 .cursor {	/* blinking cursor */
-	margin-left: -12px;
-	margin-right: -12px;
+	position: relative;
+	right: 0.85em;
 	animation-name: blink;
 	animation-duration: 800ms;
 	animation-iteration-count: infinite;
