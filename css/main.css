@@ -115,13 +115,13 @@ body {
 .separator {
 	text-align: center;
 	background-color: var(--darkgray);
-	padding: 0.5%;
+	padding: 10px 20px;
 	align-content: center;
 }
 
 .separator p {
 	color: white;
-	max-width: 60%;
+	max-width: 850px;
 	margin-left: auto;
 	margin-right: auto;
 }
