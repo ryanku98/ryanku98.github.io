@@ -1,0 +1,11 @@
+html, body {
+	margin: 0;
+	height: 100%;
+}
+body {
+	font-family: "nova mono", monospace;
+	background-color: var(--darkdarkgray);
+}
+p {
+	color: white;
+}
