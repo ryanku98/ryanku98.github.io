@@ -23,26 +23,26 @@ body {
 }
 
 .back0 {
-	background-image: url("../images/parallax-bgs/cute-corgo.jpg");
+	background-image: url("../images/parallax-bgs/cute-corgo-hd.jpg");
 	min-height: 76%;	/* arbitrary value to set welcome banner at bottom of page */
 }
 .back1 {
-	background-image: url("../images/parallax-bgs/sunrise-mini.jpg");
+	background-image: url("../images/parallax-bgs/sunrise-mini-hd.jpg");
 	/* min-height: 1000px; */
 	min-height: 100%;
 }
 .back2 {
-	background-image: url("../images/parallax-bgs/cars-beach-background.jpg");
+	background-image: url("../images/parallax-bgs/cars-beach-background-hd.jpg");
 	/* min-height: 700px; */
 	min-height: 70%;
 }
 .back3 {
-	background-image: url("../images/parallax-bgs/beach-seagull.jpg");
+	background-image: url("../images/parallax-bgs/beach-seagull-hd.jpg");
 	/* min-height: 700px; */
 	min-height: 70%;
 }
 .back4 {
-	background-image: url("../images/parallax-bgs/rock-alone.jpg");
+	background-image: url("../images/parallax-bgs/rock-alone-hd.jpg");
 	/* min-height: 1000px; */
 	min-height: 85%;
 }
