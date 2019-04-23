@@ -1,12 +1,16 @@
+html, body {
+	--darkdarkgray: #222222;
+	--darkgray: #333333;
+	--graypink: #9b8497;
+}
+
 /* NAVIGATION */
 .navbar {
-	/* background-color: transparent; */
-	/* opacity: 1; */
 	display: flex;
 	justify-content: flex-end;
 	flex-wrap: wrap;
 	padding-right: 5px;
-	/* background-color: var(--lightlightgray); */
+	background-color: var(--darkdarkgray);
 }
 
 .navbar a {
