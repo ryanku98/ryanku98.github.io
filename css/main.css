@@ -1,14 +1,33 @@
-html, body {
+html,
+body {
 	margin: 0;
-	height: 100%;
 	--darkdarkgray: #222222;
 	--darkgray: #333333;
 	--gray: #888888;
 	--lightlightgray: #bbbbbb;
 }
+
+html {
+	height: 100%;
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
 body {
 	background-color: var(--darkdarkgray);
 	font-family: "nova mono", monospace;
+	min-height: 100%;
+	position: relative;
+}
+.content {
+	margin: 0;
+	padding-bottom: var(--footerheight);
+	/* height: 100vh; */
 }
 
 
@@ -24,27 +43,23 @@ body {
 
 .back0 {
 	background-image: url("../images/parallax-bgs/cute-corgo-hd.jpg");
-	min-height: 76%;	/* arbitrary value to set welcome banner at bottom of page */
+	min-height: 76vh;
 }
 .back1 {
 	background-image: url("../images/parallax-bgs/sunrise-mini-hd.jpg");
-	/* min-height: 1000px; */
-	min-height: 100%;
+	min-height: 100vh;
 }
 .back2 {
 	background-image: url("../images/parallax-bgs/cars-beach-background-hd.jpg");
-	/* min-height: 700px; */
-	min-height: 70%;
+	min-height: 70vh;
 }
 .back3 {
 	background-image: url("../images/parallax-bgs/beach-seagull-hd.jpg");
-	/* min-height: 700px; */
-	min-height: 70%;
+	min-height: 70vh;
 }
 .back4 {
 	background-image: url("../images/parallax-bgs/rock-alone-hd.jpg");
-	/* min-height: 1000px; */
-	min-height: 85%;
+	min-height: 85vh;
 }
 
 
@@ -64,7 +79,8 @@ body {
 	padding: 0;
 }
 
-.banner, .cursor {	/* <welcome|> */
+.banner,
+.cursor {	/* <welcome|> */
 	display: inline;
 	font-size: 3em;
 }
