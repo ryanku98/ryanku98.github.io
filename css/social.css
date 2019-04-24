@@ -1,5 +1,14 @@
+html,
+body {
+	--lightlightgray: #bbbbbb;
+	--footerheight: 85px;
+}
+
 footer {
 	background-color: var(--lightlightgray);
+	position: absolute;
+	bottom: 0;
+	width: 100%;
 }
 
 .social {
