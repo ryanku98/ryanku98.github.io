@@ -27,7 +27,6 @@ body {
 .content {
 	margin: 0;
 	padding-bottom: var(--footerheight);
-	/* height: 100vh; */
 }
 
 
@@ -35,30 +34,30 @@ body {
 .parallax {
 	background-size: cover;
 	background-attachment: fixed;
-	background-position: center;
+	background-position: center 0;
 	background-repeat: no-repeat;
 	opacity: 0.65;
 	position: relative;
 }
 
 .back0 {
-	background-image: url("../images/parallax-bgs/cute-corgo-hd.jpg");
+	background-image: url("../images/parallax-bgs/cute-corgo-front.jpg");
 	min-height: 76vh;
 }
 .back1 {
-	background-image: url("../images/parallax-bgs/sunrise-mini-hd.jpg");
+	background-image: url("../images/parallax-bgs/sunrise-mini-front.jpg");
 	min-height: 100vh;
 }
 .back2 {
-	background-image: url("../images/parallax-bgs/cars-beach-background-hd.jpg");
+	background-image: url("../images/parallax-bgs/cars-beach-background-front.jpg");
 	min-height: 70vh;
 }
 .back3 {
-	background-image: url("../images/parallax-bgs/beach-seagull-hd.jpg");
+	background-image: url("../images/parallax-bgs/beach-seagull-front.jpg");
 	min-height: 70vh;
 }
 .back4 {
-	background-image: url("../images/parallax-bgs/rock-alone-hd.jpg");
+	background-image: url("../images/parallax-bgs/rock-alone-front.jpg");
 	min-height: 85vh;
 }
 
