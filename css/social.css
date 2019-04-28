@@ -19,6 +19,12 @@ footer {
 	margin: 0;
 }
 
+.copyright {
+	position: absolute;
+	bottom: 5px;
+	left: 5px;
+}
+
 .social a {
 	position: relative;
 }
