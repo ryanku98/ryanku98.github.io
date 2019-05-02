@@ -19,7 +19,7 @@ html {
 }
 
 body {
-	background-color: var(--darkdarkgray);
+	background-color: var(--darkgray);
 	font-family: "nova mono", monospace;
 	min-height: 100%;
 	position: relative;
