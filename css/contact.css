@@ -34,7 +34,7 @@ body {
 
 .content span {
 	position: relative;
-	bottom: 9px;	/* align text with bullet point icons */
+	bottom: 8px;	/* align text with bullet point icons */
 }
 
 .contacts {
