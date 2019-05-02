@@ -1,0 +1,45 @@
+html,
+body {
+	margin: 0;
+	--darkgray: #333333;
+	--gray: #888888;
+}
+
+html {
+	height: 100%;
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	background-color: var(--gray);
+	font-family: "nova mono", monospace;
+	min-height: 100%;
+}
+
+.content {
+	margin: 0;
+}
+
+.content p {
+	/* display: block; */
+	/* text-align: center; */
+	margin: 0;
+}
+
+.content span {
+	position: relative;
+	bottom: 9px;	/* align text with bullet point icons */
+}
+
+.contacts {
+	margin: auto;
+	margin-top: 30px;
+	width: 225px;
+	padding: 10px;
+}
