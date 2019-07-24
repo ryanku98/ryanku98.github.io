@@ -36,29 +36,33 @@ body {
 	background-attachment: fixed;
 	background-position: center 0;
 	background-repeat: no-repeat;
-	opacity: 0.65;
 	position: relative;
 }
 
 .back0 {
-	background-image: url("../images/parallax-bgs/cute-corgo-front.jpg");
-	min-height: 76vh;
+    background-image: url("../images/ascii/dory-mia-distant-owners-cropped.png");
+    min-height: 75vh;
+    opacity: 1;
 }
 .back1 {
 	background-image: url("../images/parallax-bgs/sunrise-mini-front.jpg");
 	min-height: 100vh;
+    opacity: 1;
 }
 .back2 {
 	background-image: url("../images/parallax-bgs/cars-beach-background-front.jpg");
 	min-height: 70vh;
+    opacity: 0.8;
 }
 .back3 {
-	background-image: url("../images/parallax-bgs/beach-seagull-front.jpg");
+	background-image: url("../images/parallax-bgs/merlen-sploot.jpg");
 	min-height: 70vh;
+    opacity: 0.9;
 }
 .back4 {
-	background-image: url("../images/parallax-bgs/rock-alone-front.jpg");
+	background-image: url("../images/parallax-bgs/rock-alone-front-adjusted.jpg");
 	min-height: 85vh;
+    opacity: 1;
 }
 
 
