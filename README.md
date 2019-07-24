@@ -1,0 +1,2 @@
+### Hello~ ###
+If you're here, you're probably extremely bored or just very excited to help out. In either case, welcome! Feel free to open issues for constructive feedback and/or pull requests for quick fixes - both of which will be greatly appreciated; I'm here to learn anyways~
