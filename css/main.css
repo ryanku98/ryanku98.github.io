@@ -144,3 +144,19 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 }
+
+/* MEDIA QUERIES */
+@media only screen and (max-device-width: 1024px) {
+    .back1 {
+        background-position: 80% center;
+    }
+    .back2 {
+        background-position: 60% center;
+    }
+    .back3 {
+        background-position: 15% center;
+    }
+    .back4 {
+        background-position: 70% center;
+    }
+}
