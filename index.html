@@ -1,72 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8"/>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js" crossorigin="anonymous"></script>	<!-- jQuery - Google CDN -->
-        <!-- conditionally include parallax for screens >= 1024px wide -->
-        <script src="js/conditionalparallax.js"></script>
-        <!-- cursor blink animation -->
-        <script src="js/hello.js"></script>
-        <!-- includeHTML() -->
-		<script src="js/w3.js"></script>
-		<link href="css/main.css" type="text/css" rel="stylesheet"/>
-		<link href="css/nav.css" type="text/css" rel="stylesheet"/>
-		<link href="css/social.css" type="text/css" rel="stylesheet"/>
-		<link href="icons/main.png" rel="icon"/>
-		<link href="https://fonts.googleapis.com/css?family=Nova+Mono" rel="stylesheet">
-		<title>Ryan Ku</title>
-	</head>
-	<body onload="">
-		<nav w3-include-html="includes/navbar.html" class="navbar"></nav>
-		<div class="content">
-			<div class="parallax back0"></div> <!-- ascii dory mia -->
 
-			<div class="welcome">
-				<span class="banner front" id="banner"></span><span class="cursor">|</span>
-				<p>Welcome to my site! This is just a personal project I am undertaking in my free time (as a college CS student, such time is certainly hard to come by). Please feel free to browse through as I randomly put my life out there for the world to see; I'll be constantly updating with not just content but also with random <del>bugs</del>features.</p>
-			</div>
+<head>
+    <meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js" crossorigin="anonymous"></script> <!-- jQuery - Google CDN -->
+    <!-- conditionally include parallax for screens >= 1024px wide -->
+    <script src="js/conditionalparallax.js"></script>
+    <!-- cursor blink animation -->
+    <script src="js/hello.js"></script>
+    <!-- includeHTML() -->
+    <script src="js/w3.js"></script>
+    <link href="css/main.css" type="text/css" rel="stylesheet" />
+    <link href="css/nav.css" type="text/css" rel="stylesheet" />
+    <link href="css/social.css" type="text/css" rel="stylesheet" />
+    <link href="icons/main.png" rel="icon" />
+    <link href="https://fonts.googleapis.com/css?family=Nova+Mono" rel="stylesheet">
+    <title>Ryan Ku</title>
+</head>
 
-			<div class="parallax back1"> <!-- sunrise -->
-				<div class="caption">
-					<span>scenic horizons</span>
-				</div>
-			</div>
+<body onload="">
+    <nav w3-include-html="includes/navbar.html" class="navbar"></nav>
+    <div class="content">
+        <div class="parallax back0"></div> <!-- ascii dory mia -->
 
-			<div class="separator">
-				<p>Cars are a big part of my life. From Camaros to Supras, RS6s to Aventadors, Minis to Evos. I'm always open to learning more about building cars and hope to find and rebuild my own 1969 Camaro SS one day~</p>
-			</div>
+        <div class="welcome">
+            <span class="banner front" id="banner"></span><span class="cursor">|</span>
+            <p>Welcome to my site! This is just a personal project I am undertaking in my free time (as a college CS student, such time is certainly hard to come by). Please feel free to browse through as I randomly put my life out there for the
+                world to see; I'll be constantly updating with not just content but also with random <del>bugs</del>features.</p>
+        </div>
 
-			<div class="parallax back2"> <!-- cars beach background -->
-				<div class="caption">
-					<span>coastal cruises</span>
-				</div>
-			</div>
+        <div class="parallax back1">
+            <!-- sunrise -->
+            <div class="caption">
+                <span>scenic horizons</span>
+            </div>
+        </div>
 
-			<div class="parallax back3"> <!-- merlen -->
-				<div class="caption">
-					<span>beach doggos</span>
-				</div>
-			</div>
+        <div class="separator">
+            <p>Cars are a big part of my life. From Camaros to Supras, RS6s to Aventadors, Minis to Evos. I'm always open to learning more about building cars and hope to find and rebuild my own 1969 Camaro SS one day~</p>
+        </div>
 
-			<div class="separator">
-				<p>Though I grew up in Shanghai, I'm very much a California boy, and as a California boy, I love blue skies, sunshine, and the coast. If you ever get the chance, free up a day over the weekend and just drive down Highway 1 between Santa Cruz and Half Moon Bay (trust me on this).</p>
-			</div>
+        <div class="parallax back2">
+            <!-- cars beach background -->
+            <div class="caption">
+                <span>coastal cruises</span>
+            </div>
+        </div>
 
-			<div class="parallax back4"> <!-- rock cliff -->
-				<div class="caption">
-					<span>getaways</span>
-				</div>
-			</div>
+        <div class="parallax back3">
+            <!-- merlen -->
+            <div class="caption">
+                <span>beach doggos</span>
+            </div>
+        </div>
 
-			<div class="separator">
-				<p>Beyond obsessing over all types of cars, they are also my getaway from life. I often take a Sunday afternoon to just drive out to a nice sightseeing location to watch the sunset while simping to indie pop or R&B.</p>
-			</div>
-		</div> <!-- content -->
+        <div class="separator">
+            <p>Though I grew up in Shanghai, I'm very much a California boy, and as a California boy, I love blue skies, sunshine, and the coast. If you ever get the chance, free up a day over the weekend and just drive down Highway 1 between Santa
+                Cruz and Half Moon Bay (trust me on this).</p>
+        </div>
 
-		<footer w3-include-html="includes/footer.html"></footer>
-	    <script>
-			printBanner();
-			includeHTML();
-	    </script>
-	</body>
+        <div class="parallax back4">
+            <!-- rock cliff -->
+            <div class="caption">
+                <span>getaways</span>
+            </div>
+        </div>
+
+        <div class="separator">
+            <p>Beyond obsessing over all types of cars, they are also my getaway from life. I often take a Sunday afternoon to just drive out to a nice sightseeing location to watch the sunset while simping to indie pop or R&B.</p>
+        </div>
+    </div> <!-- content -->
+
+    <footer w3-include-html="includes/footer.html"></footer>
+    <script>
+        printBanner();
+        includeHTML();
+    </script>
+</body>
+
 </html>
