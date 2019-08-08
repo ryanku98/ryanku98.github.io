@@ -1,8 +1,7 @@
 html,
 body {
 	margin: 0;
-	--darkgray: #333333;
-	--gray: #888888;
+    --lightlightgray: #eee;
 }
 
 html {
@@ -17,7 +16,7 @@ html {
 }
 
 body {
-	background-color: var(--gray);
+	background-color: var(--lightlightgray);
 	font-family: "nova mono", monospace;
 	min-height: 100%;
 }
