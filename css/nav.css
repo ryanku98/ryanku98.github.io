@@ -1,7 +1,7 @@
 html, body {
 	--darkdarkgray: #222222;
 	--darkgray: #333333;
-	--graypink: #9b8497;
+    --white: #fff;
 }
 
 /* NAVIGATION */
@@ -19,10 +19,10 @@ html, body {
 	margin: auto;
 	margin-left: 0px;
 	margin-right: 0px;
-	color: var(--darkgray);
+	color: var(--darkdarkgray);
 	padding: 5px;
 	opacity: 0.8;
-	background-color: var(--graypink);
+	background-color: var(--white);
 	cursor: pointer;
 	position: relative;
 	height: 50%;

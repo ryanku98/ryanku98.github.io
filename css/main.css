@@ -1,10 +1,10 @@
 html,
 body {
 	margin: 0;
-	--darkdarkgray: #222222;
+    --black: #000;
 	--darkgray: #333333;
 	--gray: #888888;
-	--lightlightgray: #bbbbbb;
+	--lightlightgray: #eee;
 }
 
 html {
@@ -133,7 +133,7 @@ body {
 /* CONTENT */
 .separator {
 	text-align: center;
-	background-color: var(--darkgray);
+	background-color: var(--darkdarkgray);
 	padding: 10px 20px;
 	align-content: center;
 }
