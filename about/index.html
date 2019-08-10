@@ -1,1 +1,52 @@
-<!-- about me page -- under construction -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145249342-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-145249342-1');
+    </script>
+    <meta charset="utf-8">
+    <!-- includeHTML() -->
+    <script src="../js/w3.js"></script>
+    <!-- STYLES -->
+    <link rel="stylesheet" href="../css/aboutme.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/social.css">
+    <!-- FONTS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nova+Mono">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata:400&display=swap">
+    <title>About Ryan</title>
+</head>
+
+<body>
+    <nav w3-include-html="../includes/navbar.html" class="navbar"></nav>
+
+    <div class="background back0"></div>
+    <div class="background back1"></div>
+    <div class="preview">
+        <img src="../images/me/headshot-square-1080p.jpg" class="headshot">
+        <div class="caption">
+            <p>tech geek</p>
+            <p>car nerd</p>
+            <p id="code">code freak</p>
+        </div>
+    </div>
+
+    <!-- <div class="description-container"> -->
+        <div class="description">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+        </div>
+    <!-- </div> -->
+
+    <footer w3-include-html="../includes/footer.html"></footer>
+    <script>
+        includeHTML();
+    </script>
+</body>
+
+</html>
