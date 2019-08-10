@@ -11,6 +11,7 @@ html, body {
 	flex-wrap: wrap;
 	background-color: var(--darkdarkgray);
 	overflow: hidden;
+    z-index: 10;
 }
 
 .navbar a {
