@@ -1,0 +1,163 @@
+html, body {
+    margin: 0;
+    overflow: hidden;
+    --gray: #888;
+    --lightgray: #ccc;
+    --lightlightgray: #eee;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--lightlightgray);
+    font-family: "nova mono", monospace;
+}
+
+.background, .preview, .description {
+    position: absolute;
+    margin: 0;
+}
+
+.background {
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    left: 0%;
+    top: 0%;
+    opacity: 0.6;
+    z-index: -1;
+}
+
+.back0 {
+    background-image: url("../images/background/shanghai-skyline-night-2160p.png");
+}
+
+.back1 {
+    background-image: url("../images/background/golden-gate-long-exposure-cropped.jpg");
+}
+
+.headshot {
+    clip-path: circle(50% at 50% 50%);
+}
+
+p, #code {
+    margin: 0;
+    padding: 0;
+}
+
+#code {
+    font-family: "inconsolata", "monospace";
+    margin-top: 0.3em;
+}
+
+.caption {
+    background-color: var(--lightgray);
+    opacity: 0.7;
+    font-size: 1.3em;
+    padding: 1em;
+    border: var(--lightgray);
+    border-radius: 5px;
+    text-align: center;
+    margin: 0;
+    width: 10em;
+}
+
+.description p {
+    position: relative;
+    max-width: 80%;
+    width: 100%;
+    margin: auto;
+    background-color: var(--gray);
+    opacity: 0.8;
+    color: white;
+    padding: 1em;
+    border: var(--gray);
+    border-radius: 5px;
+    top: 30%;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-device-width: 1024px) {
+    .description p {
+        top: 10%;
+    }
+}
+@media only screen and (min-device-width: 1024px) {
+    .headshot, .caption {
+        position: relative;
+        top: 10%;
+    }
+}
+@media only screen and (orientation:landscape) {
+    .back0 {
+        clip-path: polygon(0 0, 85% 0, 15% 100%, 0% 100%);
+    }
+    .back1 {
+        clip-path: polygon(85% 0, 100% 0, 100% 100%, 15% 100%);
+    }
+    .preview {
+        width: 40vw;
+        height: 100vh;
+        left: 0;
+    }
+    .headshot, .caption {
+        margin: auto;
+    }
+    .headshot {
+        width: 30vh;
+        display: block;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    .caption {
+        /* width: 10em; */
+    }
+    .description {
+        width: 60vw;
+        height: 100vh;
+        right: 0;
+    }
+    .description p {
+
+    }
+}
+
+@media only screen and (orientation:portrait) {
+    .back0 {
+        background-position: 35% center;
+        clip-path: polygon(0 0, 100% 0, 100% 10%, 0 90%);
+    }
+    .back1 {
+        clip-path: polygon(100% 10%, 100% 100%, 0 100%, 0 90%);
+        background-position: 80% center;
+    }
+    .preview {
+        height: 40vh;
+        width: 100%;
+        top: 0;
+        display: flex;
+        align-items: center;
+    }
+    .headshot, .caption {
+        position: absolute;
+    }
+    .headshot {
+        width: 35vw;
+        left: 10%;
+    }
+    .caption {
+        right: 10%;
+        font-size: 1.7em;
+    }
+    .description {
+        height: 60vh;
+        width: 100%;
+        bottom: 0;
+        font-size: 1.5em;
+    }
+}
