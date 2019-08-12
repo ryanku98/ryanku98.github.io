@@ -20,6 +20,10 @@ body {
     margin: 0;
 }
 
+.preview, .description {
+    z-index: 1;
+}
+
 .background {
     height: 100vh;
     width: 100vw;
