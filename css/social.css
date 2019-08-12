@@ -49,3 +49,10 @@ footer {
 	width: 40px;
 	margin: 5px 10px;
 }
+
+@media only screen and (max-device-width: 1024px) {
+    .social img {
+        height: 4vmax;
+        width: 4vmax;
+    }
+}
