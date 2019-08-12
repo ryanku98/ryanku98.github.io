@@ -21,8 +21,6 @@ html {
 body {
     background-color: var(--lightlightgray);
     font-family: "nova mono", monospace;
-    min-height: 100%;
-    position: relative;
 }
 
 
