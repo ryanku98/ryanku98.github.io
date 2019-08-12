@@ -24,10 +24,6 @@ body {
     min-height: 100%;
     position: relative;
 }
-.content {
-    margin: 0;
-    padding-bottom: var(--footerheight);
-}
 
 
 /* BACKGROUND IMAGES */

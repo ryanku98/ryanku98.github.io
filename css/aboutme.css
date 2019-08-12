@@ -7,10 +7,14 @@ html, body {
 }
 
 html {
+    height: 100%;
     box-sizing: border-box;
 }
 
 body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     background-color: var(--lightlightgray);
     font-family: "nova mono", monospace;
 }
@@ -108,6 +112,7 @@ p, #code {
         width: 40vw;
         height: 100vh;
         left: 0;
+        top: 0;
     }
     .headshot, .caption {
         margin: auto;
@@ -124,10 +129,8 @@ p, #code {
     .description {
         width: 60vw;
         height: 100vh;
+        top: 0;
         right: 0;
-    }
-    .description p {
-
     }
 }
 
@@ -144,6 +147,7 @@ p, #code {
         height: 40vh;
         width: 100%;
         top: 0;
+        left: 0;
         display: flex;
         align-items: center;
     }
@@ -162,6 +166,7 @@ p, #code {
         height: 60vh;
         width: 100%;
         bottom: 0;
+        right: 0;
         font-size: 1.5em;
     }
 }
