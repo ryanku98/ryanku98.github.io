@@ -21,12 +21,6 @@ html {
 body {
     background-color: var(--lightlightgray);
     font-family: "nova mono", monospace;
-    min-height: 100%;
-    position: relative;
-}
-.content {
-    margin: 0;
-    padding-bottom: var(--footerheight);
 }
 
 
