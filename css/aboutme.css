@@ -100,10 +100,10 @@ p, #code {
 /* MEDIA QUERIES */
 @media only screen and (orientation:landscape) {
     .back0 {
-        clip-path: polygon(0 0, 85% 0, 15% 100%, 0% 100%);
+        /* clip-path: polygon(0 0, 85% 0, 15% 100%, 0% 100%); */
     }
     .back1 {
-        clip-path: polygon(85% 0, 100% 0, 100% 100%, 15% 100%);
+        /* clip-path: polygon(85% 0, 100% 0, 100% 100%, 15% 100%); */
     }
     .preview, .description {
         flex-direction: column;
@@ -117,11 +117,11 @@ p, #code {
 @media only screen and (orientation:portrait) {
     .back0 {
         background-position: 35% center;
-        clip-path: polygon(0 0, 100% 0, 100% 10%, 0 90%);
+        /* clip-path: polygon(0 0, 100% 0, 100% 10%, 0 90%); */
     }
     .back1 {
-        clip-path: polygon(100% 10%, 100% 100%, 0 100%, 0 90%);
         background-position: 80% center;
+        /* clip-path: polygon(100% 10%, 100% 100%, 0 100%, 0 90%); */
     }
     .content {
         flex-direction: column;
