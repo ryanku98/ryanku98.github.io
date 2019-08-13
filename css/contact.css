@@ -24,24 +24,36 @@ body {
 	justify-content: center;
 }
 
-.content p {
-	/* display: block; */
-	/* text-align: center; */
+.contacts p {
 	margin: 0;
 }
 
-.content span {
+.contacts span {
 	position: relative;
-	bottom: 8px;	/* align text with bullet point icons */
+    /* align text with bullet point icons */
+	bottom: 0.3em;
 }
 
 .contacts {
-	margin-top: 30px;
-	padding: 10px;
+	margin-top: 2em;
+	padding: 1em;
+}
+
+.contacts img {
+    height: 1.2em;
+    width: 1.2em;
 }
 
 @media only screen and (max-device-width: 1024px) {
-	div.contacts {
-		font-size: 2vmax; /* scalable navigation bar  */
+	.contacts {
+		font-size: 2vmax;
 	}
+    .contacts img {
+        height: 2vmax;
+        width: 2vmax;
+    }
+    .contacts span {
+        /* align text with bullet point icons */
+        bottom: 0.4vmax;
+    }
 }
