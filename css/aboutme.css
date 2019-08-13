@@ -15,24 +15,20 @@ body {
     font-family: "nova mono", monospace;
 }
 
-.background, .preview, .description {
-    position: absolute;
-    margin: 0;
-}
 
-.preview, .description {
-    z-index: 1;
+/* BACKGROUND */
+.background {
+    position: absolute;
+    /* margin: 0; */
 }
 
 .background {
-    height: 100vh;
-    width: 100vw;
+    width: 100%;
+    min-height: 100vh;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    left: 0%;
-    top: 0%;
     opacity: 0.6;
     z-index: -1;
 }
@@ -45,6 +41,8 @@ body {
     background-image: url("../images/background/golden-gate-long-exposure-cropped.jpg");
 }
 
+
+/* CONTENT */
 .headshot {
     clip-path: circle(50% at 50% 50%);
 }
@@ -60,10 +58,12 @@ p, #code {
 }
 
 .caption {
+    display: flex;
+    flex-direction: column;
     background-color: var(--lightgray);
     opacity: 0.7;
     font-size: 1.3em;
-    padding: 1em;
+    padding: 0.5em;
     border: var(--lightgray);
     border-radius: 5px;
     text-align: center;
@@ -72,31 +72,32 @@ p, #code {
 }
 
 .description p {
-    position: relative;
     max-width: 80%;
-    width: 100%;
-    margin: auto;
     background-color: var(--gray);
-    opacity: 0.8;
+    opacity: 0.85;
     color: white;
     padding: 1em;
     border: var(--gray);
     border-radius: 5px;
-    top: 30%;
 }
 
+.content {
+    display: flex;
+}
+.preview, .description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.preview {
+    flex: 2;
+}
+.description {
+    flex: 3;
+}
+
+
 /* MEDIA QUERIES */
-@media only screen and (max-device-width: 1024px) {
-    .description p {
-        top: 10%;
-    }
-}
-@media only screen and (min-device-width: 1024px) {
-    .headshot, .caption {
-        position: relative;
-        top: 10%;
-    }
-}
 @media only screen and (orientation:landscape) {
     .back0 {
         clip-path: polygon(0 0, 85% 0, 15% 100%, 0% 100%);
@@ -104,29 +105,12 @@ p, #code {
     .back1 {
         clip-path: polygon(85% 0, 100% 0, 100% 100%, 15% 100%);
     }
-    .preview {
-        width: 40vw;
-        height: 100vh;
-        left: 0;
-        top: 0;
-    }
-    .headshot, .caption {
-        margin: auto;
+    .preview, .description {
+        flex-direction: column;
     }
     .headshot {
         width: 30vh;
-        display: block;
-        margin-top: 5%;
         margin-bottom: 5%;
-    }
-    .caption {
-        /* width: 10em; */
-    }
-    .description {
-        width: 60vw;
-        height: 100vh;
-        top: 0;
-        right: 0;
     }
 }
 
@@ -139,30 +123,14 @@ p, #code {
         clip-path: polygon(100% 10%, 100% 100%, 0 100%, 0 90%);
         background-position: 80% center;
     }
-    .preview {
-        height: 40vh;
-        width: 100%;
-        top: 0;
-        left: 0;
-        display: flex;
-        align-items: center;
-    }
-    .headshot, .caption {
-        position: absolute;
+    .content {
+        flex-direction: column;
     }
     .headshot {
         width: 35vw;
-        left: 10%;
-    }
-    .caption {
-        right: 10%;
-        font-size: 1.7em;
+        margin-right: 5%;
     }
     .description {
-        height: 60vh;
-        width: 100%;
-        bottom: 0;
-        right: 0;
-        font-size: 1.5em;
+        /* font-size: 1.1em; */
     }
 }
