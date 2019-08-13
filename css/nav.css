@@ -11,33 +11,22 @@ html, body {
 	flex-wrap: wrap;
 	background-color: var(--darkdarkgray);
 	overflow: hidden;
-    position: relative;
-    z-index: 10;
 }
 
 .navbar a {
 	font-family: "nova mono", monospace;
-	font-size: 1rem;
-	margin: auto;
-	margin-left: 0px;
-	margin-right: 0px;
+    font-size: 1.2vmax;
+    margin: 0.4vmax 0.2vmax;
 	color: var(--darkdarkgray);
 	padding: 5px;
 	opacity: 0.8;
 	background-color: var(--white);
 	cursor: pointer;
-	position: relative;
-	height: 50%;
-	/* "transparent" border to add what looks like a margin at the top and bottom */
-	border-radius: 10%;
-	border-color: var(--darkdarkgray);
-	border-width: 10px 5px;
-	border-style: solid;
 }
 
 @media only screen and (max-device-width: 1024px) {
 	.navbar a {
-		font-size: 2vmax; /* scalable navigation bar  */
+        font-size: 3.3vmin;
 	}
 }
 
