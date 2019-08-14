@@ -4,7 +4,13 @@ html, body {
     --gray: #888;
     --lightgray: #ccc;
     --lightlightgray: #eee;
-	--ubuntupurple: #300a24;
+	--ubuntupurple: #330025;
+    --ubuntugrey: #3d3d3d;
+    --ubuntubuttongrey: #555;
+    --ubuntubuttonbordergrey: #111;
+    --ubuntuorange: #e95420;
+    --ubuntugreentext: #15e007;
+    --ubuntubluetext: #09b2e6;
 }
 
 html {
@@ -64,28 +70,81 @@ body {
 }
 
 .text-wrapper {
-	background-color: var(--gray);
-	/* background-color: var(--ubuntupurple); */
-	opacity: 0.75;
-	color: black;
-	padding: 1em;
+	/* background-color: var(--gray); */
+	background-color: var(--ubuntupurple);
+	/* opacity: 0.75; */
+    opacity: 0.8;
+	padding: 0 0 1em 0;
 	border: var(--gray);
-	border-radius: 5px;
+	border-radius: 0.4em 0.4em 0.2em 0.2em;
 	max-width: 80%;
 }
 
-.description p, .description ul {
+.text-wrapper p, .text-wrapper span {
 	margin: 0;
+    font-family: "Ubuntu Mono", monospace;
 }
 
-.description p {
-	margin: 0;
-	padding-bottom: 1em;
+.text-wrapper p {
+	padding: 0 1em 0 0;
+    color: white;
+}
+.terminal-title {
+    color: white;
+    padding-right: 1em;
+}
+.terminal-text {
+    color: white;
 }
 
-.description ul {
-	list-style-type: square;
+
+/* BEGIN: UBUNTU TERMINAL BUTTON ALIGNMENT CRAP */
+.toolbar {
+    display: flex;
+    /* vertically center stuff in toolbar */
+    align-items: center;
+    font-family: "Ubuntu", sans-serif;
+    /* width: 100%; */
+    background-color: var(--ubuntugrey);
+    padding: 0;
+    margin: 0;
+    /* only curve top corners */
+    border-radius: 0.4em 0.4em 0 0;
 }
+.terminal-button {
+    display: inline-block;
+    font-family: monospace;
+    background-color: var(--ubuntubuttongrey);
+    color: black;
+    text-align: center;
+    height: 1em;
+    width: 1em;
+    font-size: 0.75em;
+    margin: 0.35em 0.1em;
+    padding: 0.15em;
+    border: 0.05em solid var(--ubuntubuttonbordergrey);
+    border-radius: 50%;
+}
+.terminal-button span {
+    position: relative;
+    /* bottom: 0.1em; */
+}
+.close-button {
+    margin-left: 0.5em;
+    background-color: var(--ubuntuorange);
+}
+.close-button span {
+    position: relative;
+    bottom: 0.2em;
+}
+.minimize-button span {
+    position: relative;
+    bottom: 0.1em;
+}
+.maximize-button {
+    margin-right: 0.5em;
+}
+/* END: UBUNTU TERMINAL BUTTON ALIGNMENT CRAP */
 
 .content {
     display: flex;

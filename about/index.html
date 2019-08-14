@@ -13,19 +13,21 @@
     <!-- METADATA -->
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1">
-	<!-- caption text animation -->
-	<script src="../js/caption.js"></script>
 	<!-- includeHTML() -->
     <script src="../js/w3.js"></script>
+    <!-- caption/description text animation -->
+    <script src="../js/caption.js"></script>
     <!-- STYLES -->
     <link rel="stylesheet" href="../css/aboutme.css">
     <link rel="stylesheet" href="../css/nav.css">
     <link rel="stylesheet" href="../css/social.css">
+    <!-- <link rel="stylesheet" href="../css/terminalprompttext.css"> -->
 	<!-- ICON -->
 	<link rel="icon" href="../icons/about.png">
     <!-- FONTS -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700&display=swap">
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700&display=swap"> -->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=VT323&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Mono&display=swap">
     <title>About Ryan</title>
 </head>
 
@@ -36,7 +38,6 @@
 	<div class="background back1"></div>
 
     <div class="content">
-
 
         <div class="preview">
             <img src="../images/me/headshot-square-1080p.jpg" class="headshot">
@@ -49,15 +50,43 @@
 
         <div class="description">
 			<div class="text-wrapper">
-				<p>I’m one of the several people in the US who can never give you a straight answer when you ask where they’re from – I was born in Hong Kong, grew up in Shanghai, but regularly visited family in the Bay Area, where I am now located for college. Both my parents speak Cantonese, yet I only ever learned to speak Mandarin, which has been getting rusty anyways. To toss some quick facts out there:</p>
-				<ul>
-					<li>I spent much of high school trying to spread Ultimate Frisbee throughout Shanghai and nearly skipped my graduation ceremony to attend a tournament final</li>
-					<li>I grew up loving all types of cars, but never got to drive until I permanently moved to the US</li>
-					<li>I’ve spent half a day lining up at grand openings of major boba stores, simply because</li>
-					<li>I love chatting about ethical issues/implications revolving around cutting-edge technologies</li>
-				</ul>
-			</div>
-        </div>
+                <div class="toolbar">
+                    <div class="terminal-button close-button"><span>&#10005;</span></div><div class="terminal-button minimize-button"><span>&mdash;</span></div><div class="terminal-button maximize-button"><span>&#9634;</span></div>
+                    <span class="terminal-title">ryanku98@github.io: ~</span>
+                </div> <!-- toolbar -->
+                <!-- <p>
+                    <span w3-include-html="../includes/terminalprompttext.html"></span>
+                    <span class="terminal-text" id="terminal1"></span>
+                </p> -->
+
+                <p>
+                    <span w3-include-html="../includes/terminalprompttext.html"></span>
+                    <span class="terminal-text">./ryandescription</span>
+                </p>
+				<p>
+                    <span class="terminal-text">I’m one of the several people in the US who can never give you a straight answer when you ask where they’re from – I was born in Hong Kong, grew up in Shanghai, but regularly visited family in the Bay Area, where I am now located for college. Both my parents speak Cantonese, yet I only ever learned to speak Mandarin, which has been getting rusty anyways.</span>
+                </p>
+                <p>
+                    <span w3-include-html="../includes/terminalprompttext.html"></span>
+                    <span class="terminal-text">./randomfactsaboutryan</span>
+                </p>
+                <p>
+                    <span class="terminal-text">- I spent much of high school trying to spread Ultimate Frisbee throughout Shanghai and nearly skipped my graduation ceremony to attend a tournament final</span>
+                </p>
+                <p>
+                    <span class="terminal-text">- I grew up loving all types of cars, but never got to drive until I permanently moved to the US</span>
+                </p>
+                <p>
+                    <span class="terminal-text">- I’ve spent half a day lining up at grand openings of major boba stores, simply because</span>
+                </p>
+                <p>
+                    <span class="terminal-text">- I love chatting about ethical issues/implications revolving around cutting-edge technologies</span>
+                </p>
+                <p>
+                    <span w3-include-html="../includes/terminalprompttext.html"></span>
+                </p>
+			</div> <!-- text-wrapper -->
+        </div> <!-- description -->
 
     </div> <!-- content -->
 
@@ -65,7 +94,7 @@
 
     <script>
         includeHTML();
-		printCaption();
+		printDescriptions();
     </script>
 </body>
 
