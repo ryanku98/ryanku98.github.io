@@ -24,6 +24,7 @@ footer {
 }
 
 .copyright {
+    font-family: "Roboto Mono", monospace;
     position: absolute;
     bottom: 0.25em;
     left: 0.25em;

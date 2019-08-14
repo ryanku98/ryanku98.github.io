@@ -13,7 +13,7 @@ html {
 
 body {
     background-color: var(--lightlightgray);
-    font-family: "nova mono", monospace;
+    font-family: "Roboto Mono", monospace;
 }
 
 
@@ -120,7 +120,6 @@ body {
     }
 	.text-wrapper {
 		font-size: 2.2vmin;
-		/* font-size:  */
 	}
 }
 
@@ -142,9 +141,6 @@ body {
     }
 	.text-wrapper {
 		font-size: 3vmin;
-		/* font-size: 2vmin; */
-		/* margin: 5vmin 0; */
-		/* font-size: 2vmax; */
 	}
 }
 

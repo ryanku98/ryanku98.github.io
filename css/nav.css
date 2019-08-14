@@ -14,7 +14,7 @@ html, body {
 }
 
 .navbar a {
-	font-family: "nova mono", monospace;
+	font-family: "Roboto Mono", monospace;
     font-size: 1.2vmax;
     margin: 0.4vmax 0.2vmax;
 	color: var(--darkdarkgray);
