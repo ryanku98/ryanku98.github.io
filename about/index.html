@@ -12,38 +12,50 @@
     </script>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1">
-    <!-- includeHTML() -->
+	<!-- caption text animation -->
+	<script src="../js/caption.js"></script>
+	<!-- includeHTML() -->
     <script src="../js/w3.js"></script>
     <!-- STYLES -->
     <link rel="stylesheet" href="../css/aboutme.css">
     <link rel="stylesheet" href="../css/nav.css">
     <link rel="stylesheet" href="../css/social.css">
+	<!-- ICON -->
+	<link rel="icon" href="../icons/about.png">
     <!-- FONTS -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nova+Mono">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata:400&display=swap">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=VT323&display=swap">
     <title>About Ryan</title>
 </head>
 
 <body>
     <nav w3-include-html="../includes/navbar.html" class="navbar"></nav>
+	<!-- BACKGROUNDS -->
+	<div class="background back0"></div>
+	<div class="background back1"></div>
 
     <div class="content">
 
-        <!-- BACKGROUNDS -->
-        <div class="background back0"></div>
-        <div class="background back1"></div>
 
         <div class="preview">
             <img src="../images/me/headshot-square-1080p.jpg" class="headshot">
             <div class="caption">
-                <p>tech geek</p>
-                <p>car nerd</p>
-                <p id="code">code freak</p>
+				<p id="line1"></p>
+				<p id="line2"></p>
+				<p id="line3"></p>
             </div>
         </div>
 
         <div class="description">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+			<div class="text-wrapper">
+				<p>I’m one of the several people in the US who can never give you a straight answer when you ask where they’re from – I was born in Hong Kong, grew up in Shanghai, but regularly visited family in the Bay Area, where I am now located for college. Both my parents speak Cantonese, yet I only ever learned to speak Mandarin, which has been getting rusty anyways. To toss some quick facts out there:</p>
+				<ul>
+					<li>I spent much of high school trying to spread Ultimate Frisbee throughout Shanghai and nearly skipped my graduation ceremony to attend a tournament final</li>
+					<li>I grew up loving all types of cars, but never got to drive until I permanently moved to the US</li>
+					<li>I’ve spent half a day lining up at grand openings of major boba stores, simply because</li>
+					<li>I love chatting about ethical issues/implications revolving around cutting-edge technologies</li>
+				</ul>
+			</div>
         </div>
 
     </div> <!-- content -->
@@ -52,6 +64,7 @@
 
     <script>
         includeHTML();
+		printCaption();
     </script>
 </body>
 

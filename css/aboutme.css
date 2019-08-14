@@ -4,6 +4,7 @@ html, body {
     --gray: #888;
     --lightgray: #ccc;
     --lightlightgray: #eee;
+	--ubuntupurple: #300a24;
 }
 
 html {
@@ -43,38 +44,47 @@ body {
     clip-path: circle(50% at 50% 50%);
 }
 
-p, #code {
-    margin: 0;
-    padding: 0;
-}
-
-#code {
-    font-family: "inconsolata", "monospace";
-    margin-top: 0.3em;
-}
-
 .caption {
+	font-family: "VT323", monospace;
     display: flex;
     flex-direction: column;
     background-color: var(--lightgray);
     opacity: 0.7;
-    font-size: 1.3em;
     padding: 0.5em;
     border: var(--lightgray);
     border-radius: 5px;
     text-align: center;
     margin: 0;
-    width: 10em;
+}
+
+.caption p {
+	margin: 0 5vmin;
+	padding: 0;
+	font-size: 5.1vmin;
+}
+
+.text-wrapper {
+	background-color: var(--gray);
+	/* background-color: var(--ubuntupurple); */
+	opacity: 0.75;
+	color: black;
+	padding: 1em;
+	border: var(--gray);
+	border-radius: 5px;
+	max-width: 80%;
+}
+
+.description p, .description ul {
+	margin: 0;
 }
 
 .description p {
-    max-width: 80%;
-    background-color: var(--gray);
-    opacity: 0.85;
-    color: white;
-    padding: 1em;
-    border: var(--gray);
-    border-radius: 5px;
+	margin: 0;
+	padding-bottom: 1em;
+}
+
+.description ul {
+	list-style-type: square;
 }
 
 .content {
@@ -108,6 +118,10 @@ p, #code {
         width: 30vh;
         margin-bottom: 5%;
     }
+	.text-wrapper {
+		font-size: 2.2vmin;
+		/* font-size:  */
+	}
 }
 
 @media only screen and (orientation:portrait) {
@@ -126,7 +140,18 @@ p, #code {
         width: 35vw;
         margin-right: 5%;
     }
-    .description {
-        /* font-size: 1.1em; */
-    }
+	.text-wrapper {
+		font-size: 3vmin;
+		/* font-size: 2vmin; */
+		/* margin: 5vmin 0; */
+		/* font-size: 2vmax; */
+	}
+}
+
+/* font-size of .text-wrapper overflows for tablet (near-one aspect ratio) devices in portrait mode */
+/* @media only screen and (min-aspect-ratio:0.7) and (max-aspect-ratio: 1.4) { */
+@media only screen and (orientation:portrait) and (min-aspect-ratio:7/10) {
+	.text-wrapper {
+		font-size: 2vmax;
+	}
 }
