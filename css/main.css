@@ -71,27 +71,20 @@ body {
     background-color: var(--lightlightgray);
 }
 
-#banner {	/* animated "hello" */
-margin: 0;
-padding: 0;
-}
-
-.welcome span {
-    padding: 0;
+.banner {	/* animated "hello" */
+	margin: 0;
+	padding: 0;
 }
 
 .banner,
-.cursor {	/* <welcome|> */
-    display: inline;
+.cursor {
     font-size: 3em;
 }
 
-.banner::before {content: "<";}
-.banner::after {content: ">";}
-
 .cursor {	/* blinking cursor */
     position: relative;
-    right: 0.85em;
+	margin-left: -0.25em;
+	margin-right: -0.25em;
     animation-name: blink;
     animation-duration: 800ms;
     animation-iteration-count: infinite;

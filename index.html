@@ -15,7 +15,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js" crossorigin="anonymous"></script> <!-- jQuery - Google CDN -->
     <!-- conditionally include parallax for screens >= 1024px wide -->
     <script src="js/conditionalparallax.js"></script>
-    <!-- cursor blink animation -->
+    <!-- welcome text animation -->
     <script src="js/welcome.js"></script>
     <!-- includeHTML() -->
     <script src="js/w3.js"></script>
@@ -27,15 +27,16 @@
     <title>Ryan Ku</title>
 </head>
 
-<body onload="">
+<body>
     <nav w3-include-html="includes/navbar.html" class="navbar"></nav>
 
     <div class="content">
         <div class="parallax back0"></div> <!-- ascii dory mia -->
 
         <div class="welcome">
-            <span class="banner front" id="banner"></span><span class="cursor">|</span>
-            <p>Welcome to my site! This is just a personal project I am undertaking in my free time (as a college CS student, such time is certainly hard to come by). Please feel free to browse through as I randomly put my life out there for the world to see; I'll be constantly updating with not just content but also with random <del>bugs</del>features.</p>
+			<!-- <span class="banner front" id="banner"></span><span class="cursor">|</span> -->
+			<span class="banner">&lt</span><span class="banner" id="banner"></span><span class="cursor">|</span><span class="banner">&gt</span>
+            <p>Welcome to my site! This is just a personal project I am undertaking in my free time (as a college CS student, such time is certainly hard to come by). Please feel free to browse through as I randomly put my life out there for the world to see; I'll be constantly updating with not just content but also random <del>bugs</del>features.</p>
         </div>
 
         <div class="parallax back1">
@@ -82,8 +83,8 @@
     <footer w3-include-html="includes/footer.html"></footer>
 
     <script>
-        printBanner();
         includeHTML();
+		printBanner();
     </script>
 </body>
 
