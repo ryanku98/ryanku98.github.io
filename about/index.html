@@ -25,7 +25,6 @@
 	<!-- ICON -->
 	<link rel="icon" href="../icons/about.png">
     <!-- FONTS -->
-    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700&display=swap"> -->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=VT323&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Mono&display=swap">
     <title>About Ryan</title>
@@ -41,32 +40,39 @@
 
         <div class="preview">
             <img src="../images/me/headshot-square-1080p.jpg" class="headshot">
-            <div class="caption">
-				<p id="line1"></p>
-				<p id="line2"></p>
-				<p id="line3"></p>
+            <div class="caption-terminal">
+                <div class="toolbar">
+                    <div class="terminal-button close-button"><span>&#10005;</span></div><div class="terminal-button minimize-button"><span>&mdash;</span></div><div class="terminal-button maximize-button"><span>&#9634;</span></div>
+                    <span class="terminal-title">ryanku98@github.io: ~</span>
+                </div>
+				<p id="caption-prompt1">
+                    <span id="caption1"></span>
+                </p>
+                <p id="caption-response1a"></p>
+				<p id="caption-response1b"></p>
+				<p id="caption-response1c"></p>
+                <p id="caption-prompt2"></p>
             </div>
         </div>
 
         <div class="description">
-			<div class="text-wrapper">
+			<div class="description-terminal">
                 <div class="toolbar">
                     <div class="terminal-button close-button"><span>&#10005;</span></div><div class="terminal-button minimize-button"><span>&mdash;</span></div><div class="terminal-button maximize-button"><span>&#9634;</span></div>
                     <span class="terminal-title">ryanku98@github.io: ~</span>
                 </div> <!-- toolbar -->
-                <p id="prompt1">
-                    <span style="color: var(--ubuntugreentext);">ryanku98@github.io</span><span style="color: white;">:</span><span style="color: var(--ubuntubluetext);">~</span><span style="color: white;">$ </span>
-                    <span class="terminal-text" id="description1"></span>
+                <p id="description-prompt1">
+                    <span id="description1"></span>
                 </p>
-                <p id="response1"></p>
-                <p id="prompt2">
-                    <span class="terminal-text" id="description2"></span>
+                <p id="description-response1"></p>
+                <p id="description-prompt2">
+                    <span id="description2"></span>
                 </p>
-                <p id="response2a"></p>
-                <p id="response2b"></p>
-                <p id="response2c"></p>
-                <p id="response2d"></p>
-                <p id="prompt3"></p>
+                <p id="description-response2a"></p>
+                <p id="description-response2b"></p>
+                <p id="description-response2c"></p>
+                <p id="description-response2d"></p>
+                <p id="description-prompt3"></p>
 			</div> <!-- text-wrapper -->
         </div> <!-- description -->
 
@@ -76,7 +82,7 @@
 
     <script>
         includeHTML();
-		printDescriptions();
+		initDescriptions();
     </script>
 </body>
 
