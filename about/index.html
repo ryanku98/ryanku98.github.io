@@ -82,7 +82,8 @@
 
     <script>
         includeHTML();
-		initDescriptions();
+        // start animation only after all resources are fully loaded
+        window.onload = function() { initDescriptions(); };
     </script>
 </body>
 

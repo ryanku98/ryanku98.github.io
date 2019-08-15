@@ -86,7 +86,8 @@
 
     <script>
         includeHTML();
-		printBanner();
+        // start animation only after all resources are fully loaded
+        window.onload = function() { printBanner(); };
     </script>
 </body>
 
