@@ -21,6 +21,7 @@ footer {
 	width: 100%;
     /* keeps copyright logo inside footer... for some reason :/// */
     position: relative;
+    overflow: hidden;
 }
 
 .copyright {
