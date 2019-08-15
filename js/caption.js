@@ -33,8 +33,11 @@ function initDescriptions() {
 function insertPromptText(id) {
     document.getElementById(id).insertAdjacentHTML('afterbegin', terminalprompt);
 }
+function insertNewLine(id) {
+    document.getElementById(id).insertAdjacentHTML('beforeend', "<br />");
+}
 function insertResponse(id, response) {
-    document.getElementById(id).insertAdjacentHTML('afterbegin', response);
+    document.getElementById(id).insertAdjacentHTML('beforeend', response);
 }
 function insertCursor(id) {
     document.getElementById(id).insertAdjacentHTML('beforeend', cursor);
@@ -65,9 +68,12 @@ function caption1() {
         setTimeout(caption1, typingSpeed);
     } else {
         removeCursor();
+        setTimeout(function() { insertNewLine("caption-response1a"); }, terminalResponseTime);
         setTimeout(function() { insertResponse("caption-response1a", captionResponse1a); }, terminalResponseTime);
         setTimeout(function() { insertResponse("caption-response1b", captionResponse1b); }, terminalResponseTime);
         setTimeout(function() { insertResponse("caption-response1c", captionResponse1c); }, terminalResponseTime);
+        setTimeout(function() { insertNewLine("caption-response1c"); }, terminalResponseTime);
+        setTimeout(function() { insertNewLine("caption-response1c"); }, terminalResponseTime);
         setTimeout(function() { insertPromptText("caption-prompt2"); }, terminalResponseTime + terminalWaitTime);
         // init description animation
         setTimeout(function() { insertCursor("description-prompt1"); }, terminalWaitTime * 2);
@@ -84,7 +90,10 @@ function description1() {
     }
     else {
         removeCursor();
+        setTimeout(function() { insertNewLine("description-response1"); }, terminalResponseTime);
         setTimeout(function() { insertResponse("description-response1", descriptionResponse1); }, terminalResponseTime);
+        setTimeout(function() { insertNewLine("description-response1"); }, terminalResponseTime);
+        setTimeout(function() { insertNewLine("description-response1"); }, terminalResponseTime);
         setTimeout(function() { insertPromptText("description-prompt2"); }, terminalResponseTime + terminalWaitTime);
         setTimeout(function() { insertCursor("description-prompt2"); }, terminalResponseTime + terminalWaitTime);
         setTimeout(function() { alignCursor("description2"); }, terminalWaitTime * 3);
@@ -98,10 +107,13 @@ function description2() {
     }
     else {
         removeCursor();
+        setTimeout(function() { insertNewLine("description-response2a"); }, terminalResponseTime);
         setTimeout(function() {insertResponse("description-response2a", descriptionResponse2a)}, terminalResponseTime);
         setTimeout(function() {insertResponse("description-response2b", descriptionResponse2b)}, terminalResponseTime);
         setTimeout(function() {insertResponse("description-response2c", descriptionResponse2c)}, terminalResponseTime);
         setTimeout(function() {insertResponse("description-response2d", descriptionResponse2d)}, terminalResponseTime);
+        setTimeout(function() { insertNewLine("description-response2d"); }, terminalResponseTime);
+        setTimeout(function() { insertNewLine("description-response2d"); }, terminalResponseTime);
         setTimeout(function() {insertCursor("description-prompt3")}, terminalWaitTime * 2);
         setTimeout(function() {insertPromptText("description-prompt3")}, terminalResponseTime + terminalWaitTime);
         setInterval(blinkCursor, blinkRate);
