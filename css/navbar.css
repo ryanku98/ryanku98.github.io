@@ -1,6 +1,7 @@
 html, body {
 	--darkdarkgray: #222;
 	--darkgray: #333;
+    --lightgray: #ccc;
     --white: #fff;
 }
 
@@ -13,34 +14,32 @@ html, body {
 	overflow: hidden;
 }
 
-.navbar a {
+.navbar .text {
 	font-family: "Roboto Mono", monospace;
     font-size: 1.2vmax;
+}
+
+.navbar .nav-element {
     margin: 0.4vmax 0.2vmax;
-	color: var(--darkdarkgray);
 	padding: 5px;
-	opacity: 0.8;
-	background-color: var(--white);
 	cursor: pointer;
 }
 
-@media only screen and (max-device-width: 1024px) {
-	.navbar a {
-        font-size: 3.3vmin;
-	}
+.navbar .hoverable {
+	color: var(--darkdarkgray);
+	background-color: var(--lightgray);
+}
+.navbar .hoverable:hover {
+	background-color: var(--white);
 }
 
-.navbar a:hover {
-	opacity: 1;
-}
-
-.navbar span {
+.navbar .expanding {
 	display: inline-block;
 	position: relative;
 	transition: 0.5s;
 }
 
-.navbar span::after {
+.navbar .expanding::after {
 	transition: 0.5s;
 	content: ' \00bb';
 	opacity: 0;	/* hide arrow */
@@ -49,11 +48,17 @@ html, body {
 	right: -20px;
 }
 
-.navbar a:hover span {
+.navbar .hoverable:hover .expanding {
 	padding-right: 15px;
 }
 
-.navbar a:hover span::after {
+.navbar .hoverable:hover .expanding::after {
 	opacity: 1; /* show arrow */
 	right: 0;
+}
+
+@media only screen and (max-device-width: 1024px) {
+	.navbar .text {
+        font-size: 3.3vmin;
+	}
 }
