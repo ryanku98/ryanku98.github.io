@@ -17,11 +17,12 @@ html, body {
 .navbar .text {
 	font-family: "Roboto Mono", monospace;
     font-size: 1.2vmax;
+	padding: 5px;
+	text-decoration: none;
 }
 
 .navbar .nav-element {
     margin: 0.4vmax 0.2vmax;
-	padding: 5px;
 	cursor: pointer;
 }
 
@@ -44,8 +45,9 @@ html, body {
 	content: ' \00bb';
 	opacity: 0;	/* hide arrow */
 	position: absolute;
-	top: 0;
-	right: -20px;
+	top: 50%;
+	transform: translateY(-60%);
+	right: -10px;
 }
 
 .navbar .hoverable:hover .expanding {
@@ -54,7 +56,18 @@ html, body {
 
 .navbar .hoverable:hover .expanding::after {
 	opacity: 1; /* show arrow */
-	right: 0;
+	right: 3px;
+}
+
+/* DROPDOWNS */
+.navbar .dropdown-content {
+	display: none;
+	position: absolute;
+}
+
+.navbar .dropdown:hover .dropdown-content {
+	/* TODO: slide-in animation? */
+	display: block;
 }
 
 @media only screen and (max-device-width: 1024px) {
