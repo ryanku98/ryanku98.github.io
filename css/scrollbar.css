@@ -1,9 +1,3 @@
-body {
-    --darkdarkgray: #222;
-    --darkgray: #333;
-    --lightlightgray: #eee;
-}
-
 body::-webkit-scrollbar {
     width: 0.75em;
 }

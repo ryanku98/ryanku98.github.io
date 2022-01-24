@@ -1,16 +1,5 @@
-html,
-body {
-    margin: 0;
-    --black: #000;
-    --darkdarkgray: #222;
-    --darkgray: #333;
-    --gray: #888;
-    --lightlightgray: #eee;
-}
-
 html {
     height: 100%;
-    box-sizing: border-box;
 }
 
 *,
