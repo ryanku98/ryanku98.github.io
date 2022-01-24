@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145249342-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-145249342-1');
+    </script>
+    <title>About Ryan</title>
+    <!-- METADATA -->
+    <meta charset="utf-8">
+    <meta name="author" content="Ryan Ku">
+    <meta name="description" content="Spongebobify">
+    <meta name="keywords" content="Ryan, Ku, spongebobify">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1">
+    <meta property="og:title" content="Spongebobify'">
+    <meta property="og:type" content="website">
+    <!-- TODO: fix og:image -->
+    <meta property="og:image" content="https://ryanku98.github.io/images/parallax-bgs/rock-alone-front-adjusted.jpg">
+    <meta property="og:url" content="https://ryanku98.github.io/spongebobify">
+    <!-- includeHTML() -->
+    <script src="../js/w3.js"></script>
+    <!-- spongebobify functionality -->
+    <script src="../js/spongebobify.js"></script>
+    <!-- STYLES -->
+    <link rel="stylesheet" type="text/css" href="../css/spongebobify.css">
+    <link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../css/navbar.css">
+    <link rel="stylesheet" type="text/css" href="../css/footer.css">
+    <!-- ICON -->
+    <!-- TODO: fix icon -->
+    <link rel="icon" href="../icons/about.png">
+    <!-- FONTS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=VT323&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Mono&display=swap">
+</head>
+
+<body>
+    <nav w3-include-html="../includes/navbar.html" class="navbar"></nav>
+
+    <div class="content">
+        <textarea id="input-text" cols="30" rows="10"></textarea>
+        <p id="output-text"></p>
+    </div>
+
+    <footer w3-include-html="../includes/footer.html"><span class="copyright">&copy; Ryan Ku</span></footer>
+
+    <script>
+        includeHTML();
+        console.log(initSpongebobify);
+        window.onload = () => { initSpongebobify(); };
+    </script>
+</body>
+
+</html>
