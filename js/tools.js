@@ -29,7 +29,6 @@ const initInputs = () => {
             console.error(`Missing parent option with id: '${showFor}'`);
         }
     }
-
 };
 
 const initOutput = () => {
@@ -67,10 +66,6 @@ const generateAndOutputText = () => {
     const output = document.getElementById("output-text");
     const options = getOptions();
     const suboptions = getSubOptions();
-    console.log({
-        options,
-        suboptions,
-    });
     let text = input.value;
     for (const [option, selected] of Object.entries(options)) {
         if (selected) {
@@ -120,7 +115,7 @@ const textModifiers = {
 const copyToClipboard = (text) => {
     navigator.permissions.query({name: "clipboard-write"}).then(result => {
         const {state} = result;
-        if (state === "granted" || state === "prompt") {
+        if (["granted", "prompt"].includes(state)) {
             navigator.clipboard.writeText(text).then(() => {
                 alert("Text copied to clipboard.");
             }, () => {
