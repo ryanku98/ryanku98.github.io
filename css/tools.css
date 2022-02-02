@@ -20,6 +20,10 @@ body {
     user-select: none;
 }
 
+.suboption {
+    margin-left: 29px;
+}
+
 #output-text {
     border: 1px solid red;
 }

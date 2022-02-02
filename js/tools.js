@@ -1,7 +1,6 @@
 const initTools = () => {
     initInputs();
     initOutput();
-    initIntersperse();
 };
 
 const initInputs = () => {
@@ -11,16 +10,32 @@ const initInputs = () => {
     for (const element of elements) {
         element.addEventListener("input", generateAndOutputText);
     }
+
+    const suboptions = document.getElementsByClassName("suboption");
+    for (const suboption of suboptions) {
+        // suboptions hidden by default
+        suboption.style.display = "none";
+
+        // add listeners to show suboptions if parent option is checked
+        console.log(suboption.dataset);
+        const {showFor} = suboption.dataset;
+        const parentOption = document.getElementById(showFor);
+        if (parentOption) {
+            parentOption.addEventListener("input", () => {
+                suboption.style.display = parentOption.checked
+                    ? "block"
+                    : "none";
+            });
+        } else {
+            console.error(`Missing parent option with id: '${showFor}'`);
+        }
+    }
+
 };
 
 const initOutput = () => {
     const output = document.getElementById("output-text");
     output.addEventListener("click", () => { copyToClipboard(output.innerHTML); });
-};
-
-const initIntersperse = () => {
-    const checkbox = document.getElementById("intersperse");
-    checkbox.addEventListener("input", () => { showIntersperseInput(checkbox.checked); })
 };
 
 const getOptions = () => {
@@ -65,11 +80,6 @@ const textModifiers = {
     },
     intersperse: (text, {interspersingText}) =>
         text.split(" ").flatMap(word => [interspersingText || " ", word]).slice(1).join(""),
-};
-
-const showIntersperseInput = (show) => {
-    const input = document.getElementById("interspersing-text");
-    input.style.display = show ? "block" : "none";
 };
 
 const copyToClipboard = (text) => {

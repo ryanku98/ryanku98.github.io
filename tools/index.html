@@ -43,21 +43,31 @@
 
     <div class="content">
         <div class="user-input">
-            <textarea id="input-text" cols="30" rows="10"></textarea>
+            <textarea id="input-text" rows="10"></textarea>
             <div class="user-options">
                 <label for="spongebobify">
                     <input class="option" type="checkbox" id="spongebobify">
                     SpOnGeBoBiFy
                 </label>
+                <label class="suboption" for="spongebobify-cycled" data-show-for="spongebobify">
+                    <input class="option" type="checkbox" id="spongebobify-cycled">
+                    CyClEd
+                </label>
+                <label class="suboption" for="spongebobify-random" data-show-for="spongebobify">
+                    <input class="option" type="checkbox" id="spongebobify-random">
+                    RanDoM-ISh
+                </label>
+
                 <label for="intersperse">
                     <input class="option" type="checkbox" id="intersperse">
                     Intersperse
                 </label>
                 <input
+                    class="suboption"
                     id="interspersing-text"
                     type="text"
                     placeholder="Interspersing text"
-                    style="display: none;"
+                    data-show-for="intersperse"
                 >
             </div>
         </div>
