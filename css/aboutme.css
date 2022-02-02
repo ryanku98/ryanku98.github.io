@@ -1,28 +1,7 @@
-html,
-body {
-    margin: 0;
-    overflow: hidden;
-    --gray: #888;
-    --lightgray: #ccc;
-    --lightlightgray: #eee;
-	--ubuntupurple: #330025;
-    --ubuntugrey: #3d3d3d;
-    --ubuntubuttongrey: #555;
-    --ubuntubuttonbordergrey: #111;
-    --ubuntuorange: #e95420;
-    --ubuntugreentext: #15e007;
-    --ubuntubluetext: #09b2e6;
-}
-
-html {
-    box-sizing: border-box;
-}
-
 body {
     background-color: var(--lightlightgray);
     font-family: "Roboto Mono", monospace;
 }
-
 
 /* BACKGROUND */
 .background {
@@ -113,11 +92,10 @@ body {
     background-color: var(--ubuntubuttongrey);
     color: black;
     text-align: center;
-    height: 1em;
-    width: 1em;
-    font-size: 0.75em;
+    height: 1.2em;
+    width: 1.2em;
+    font-size: 0.8em;
     margin: 0.35em 0.1em;
-    padding: 0.15em;
     border: 0.05em solid var(--ubuntubuttonbordergrey);
     border-radius: 50%;
 }
@@ -129,16 +107,17 @@ body {
     margin-right: 0.5em;
 }
 /* visually center icons in circle */
-.close-button span {
+.terminal-button > span {
     position: relative;
+    padding: 0.05em;
+}
+.close-button span {
     bottom: 0.18em;
 }
 .minimize-button span {
-    position: relative;
     bottom: 0.1em;
 }
 .maximize-button span {
-    position: relative;
     bottom: 0.08em;
 }
 /* END: UBUNTU TERMINAL BUTTON ALIGNMENT CRAP */

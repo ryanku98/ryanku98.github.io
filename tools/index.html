@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145249342-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-145249342-1');
+    </script>
+    <title>Ryan's Tools</title>
+    <!-- METADATA -->
+    <meta charset="utf-8">
+    <meta name="author" content="Ryan Ku">
+    <meta name="description" content="Spongebobify">
+    <meta name="keywords" content="Ryan, Ku, spongebobify">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1">
+    <meta property="og:title" content="Spongebobify'">
+    <meta property="og:type" content="website">
+    <!-- TODO: fix og:image -->
+    <meta property="og:image" content="https://ryanku98.github.io/images/parallax-bgs/rock-alone-front-adjusted.jpg">
+    <meta property="og:url" content="https://ryanku98.github.io/spongebobify">
+    <!-- includeHTML() -->
+    <script src="../js/w3.js"></script>
+    <!-- tools -->
+    <script src="../js/tools.js"></script>
+    <!-- STYLES -->
+    <link rel="stylesheet" type="text/css" href="../css/tools.css">
+    <link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../css/navbar.css">
+    <link rel="stylesheet" type="text/css" href="../css/footer.css">
+    <!-- ICON -->
+    <!-- TODO: fix icon -->
+    <link rel="icon" href="../icons/about.png">
+    <!-- FONTS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700&display=swap">
+</head>
+
+<body>
+    <nav w3-include-html="../includes/navbar.html" class="navbar"></nav>
+
+    <div class="content">
+        Just some random tools I sometimes find myself needing on short notice.
+        <div class="user-input">
+            <textarea id="input-text" rows="10"></textarea>
+            <div class="user-options">
+                <!-- SPONGEBOBIFY -->
+                <label for="spongebobify">
+                    <input class="option" type="checkbox" id="spongebobify">
+                    SpOnGeBoBiFy
+                </label>
+                <label class="suboption" for="spongebobify-cycled" data-show-for="spongebobify">
+                    <!-- checked by default -->
+                    <input class="option" type="radio" id="spongebobify-cycled" name="spongebobify" checked>
+                    CyClEd
+                </label>
+                <label class="suboption" for="spongebobify-random" data-show-for="spongebobify">
+                    <input class="option" type="radio" id="spongebobify-random" name="spongebobify">
+                    RanDoM-ISh
+                </label>
+
+                <!-- INTERSPERSE -->
+                <label for="intersperse">
+                    <input class="option" type="checkbox" id="intersperse">
+                    Intersperse
+                </label>
+                <input
+                    class="suboption"
+                    id="interspersing-text"
+                    type="text"
+                    placeholder="Interspersing text"
+                    data-show-for="intersperse"
+                >
+            </div>
+        </div>
+        <div class="output-container">
+            (click on text to copy to clipboard)
+            <p id="output-text"></p>
+        </div>
+    </div>
+
+    <footer w3-include-html="../includes/footer.html"><span class="copyright">&copy; Ryan Ku</span></footer>
+
+    <script>
+        includeHTML();
+        window.onload = () => { initTools(); };
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+html,
+body {
+    margin: 0;
+
+    /* COLORS */
+    --black: #000;
+    --darkdarkgray: #222;
+    --darkgray: #333;
+    --gray: #888;
+    --lightgray: #ccc;
+    --lightlightgray: #eee;
+    --white: #fff;
+
+    --ubuntupurple: #330025;
+    --ubuntugrey: #3d3d3d;
+    --ubuntubuttongrey: #555;
+    --ubuntubuttonbordergrey: #111;
+    --ubuntuorange: #e95420;
+    --ubuntugreentext: #15e007;
+    --ubuntubluetext: #09b2e6;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}

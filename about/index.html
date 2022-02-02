@@ -27,7 +27,8 @@
     <script src="../js/caption.js"></script>
     <!-- STYLES -->
     <link rel="stylesheet" type="text/css" href="../css/aboutme.css">
-    <link rel="stylesheet" type="text/css" href="../css/nav.css">
+    <link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../css/navbar.css">
     <link rel="stylesheet" type="text/css" href="../css/footer.css">
 	<!-- ICON -->
 	<link rel="icon" href="../icons/about.png">
@@ -49,7 +50,9 @@
             <img src="../images/me/headshot-square-1080p.jpg" class="headshot">
             <div class="caption-terminal">
                 <div class="toolbar">
-                    <div class="terminal-button close-button"><span>&#10005;</span></div><div class="terminal-button minimize-button"><span>&mdash;</span></div><div class="terminal-button maximize-button"><span>&#9634;</span></div>
+                    <div class="terminal-button close-button"><span>&#10005;</span></div>
+                    <div class="terminal-button minimize-button"><span>&mdash;</span></div>
+                    <div class="terminal-button maximize-button"><span>&#9634;</span></div>
                     <span class="terminal-title">ryanku98@github.io: ~</span>
                 </div>
 				<p id="caption-prompt1">
@@ -65,7 +68,9 @@
         <div class="description">
 			<div class="description-terminal">
                 <div class="toolbar">
-                    <div class="terminal-button close-button"><span>&#10005;</span></div><div class="terminal-button minimize-button"><span>&mdash;</span></div><div class="terminal-button maximize-button"><span>&#9634;</span></div>
+                    <div class="terminal-button close-button"><span>&#10005;</span></div>
+                    <div class="terminal-button minimize-button"><span>&mdash;</span></div>
+                    <div class="terminal-button maximize-button"><span>&#9634;</span></div>
                     <span class="terminal-title">ryanku98@github.io: ~</span>
                 </div> <!-- toolbar -->
                 <p id="description-prompt1">
@@ -90,7 +95,7 @@
     <script>
         includeHTML();
         // start animation only after all resources are fully loaded
-        window.onload = function() { initDescriptions(); };
+        window.onload = () => { initDescriptions(); };
     </script>
 </body>
 
