@@ -38,7 +38,6 @@ const generateAndOutputText = () => {
     const options = getOptions();
     let text = input.value;
     const interspersingText = document.getElementById("interspersing-text").value;
-    console.log(interspersingText);
     const optionalOpts = {interspersingText};
     for (const [option, selected] of Object.entries(options)) {
         if (selected) {
@@ -65,8 +64,7 @@ const textModifiers = {
         return output;
     },
     intersperse: (text, {interspersingText}) =>
-        text.split(" ").flatMap(word => [interspersingText, word]).slice(1).join(""),
-
+        text.split(" ").flatMap(word => [interspersingText || " ", word]).slice(1).join(""),
 };
 
 const showIntersperseInput = (show) => {

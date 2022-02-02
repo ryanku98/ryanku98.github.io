@@ -27,7 +27,7 @@
     <!-- tools -->
     <script src="../js/tools.js"></script>
     <!-- STYLES -->
-    <link rel="stylesheet" type="text/css" href="../css/spongebobify.css">
+    <link rel="stylesheet" type="text/css" href="../css/tools.css">
     <link rel="stylesheet" type="text/css" href="../css/base.css">
     <link rel="stylesheet" type="text/css" href="../css/navbar.css">
     <link rel="stylesheet" type="text/css" href="../css/footer.css">
@@ -45,10 +45,14 @@
         <div class="user-input">
             <textarea id="input-text" cols="30" rows="10"></textarea>
             <div class="user-options">
-                <input class="option" type="checkbox" id="spongebobify">
-                <label for="spongebobify">SpOnGeBoBiFy</label>
-                <input class="option" type="checkbox" id="intersperse">
-                <label for="intersperse">Intersperse</label>
+                <label for="spongebobify">
+                    <input class="option" type="checkbox" id="spongebobify">
+                    SpOnGeBoBiFy
+                </label>
+                <label for="intersperse">
+                    <input class="option" type="checkbox" id="intersperse">
+                    Intersperse
+                </label>
                 <input
                     id="interspersing-text"
                     type="text"
@@ -58,6 +62,7 @@
             </div>
         </div>
         <div class="output-container">
+            (click on text to copy to clipboard)
             <p id="output-text"></p>
         </div>
     </div>

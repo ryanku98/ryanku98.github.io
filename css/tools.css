@@ -1,0 +1,25 @@
+body {
+    background-color: var(--lightlightgray);
+    font-family: "Roboto Mono", monospace;
+}
+
+.user-input {
+    width: 75vw;
+    margin: auto;
+    padding-top: 25px;
+}
+
+#input-text {
+    width: 100%;
+}
+
+.user-options {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+    user-select: none;
+}
+
+#output-text {
+    border: 1px solid red;
+}
